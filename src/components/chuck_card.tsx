@@ -1,12 +1,15 @@
-import ChuckImage from './assets/chuck_norris.jpg';
+import ChuckImage from "./assets/chuck_norris.jpg";
 
-const ChuckCard = () =>
+interface Props {
+  greeting: string;
+}
 
-        <>
-            <h2>{ }</h2>
+const ChuckCard = ({ greeting }: Props) => (
+  <>
+    <h2>{greeting}</h2>
 
-            <img src={ 'Chuck image here!'} alt='A handsome man' /> 
-        </>
-
+    <img src={"Chuck image here!"} alt="A handsome man" />
+  </>
+);
 
 export default ChuckCard;
